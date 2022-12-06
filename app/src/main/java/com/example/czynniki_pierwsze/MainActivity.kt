@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,13 +19,15 @@ class MainActivity : AppCompatActivity() {
             while (liczba>1){
                 while(liczba%czynnik==0){
 
-                    wynik+=liczba
-                    liczba=liczba/czynnik
+                    wynik=wynik+liczba+" "
+                    liczba/=czynnik
 
                 }//liczba%czynnik==0
                 czynnik+=1
 
             }//liczba>1
+
+            findViewById<TextView>(R.id.wynik).text=wynik
 
         }
 
