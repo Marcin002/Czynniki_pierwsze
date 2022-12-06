@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             while (liczba>1){
                 while(liczba%czynnik==0){
 
-                    wynik=wynik+liczba+" "
+                    wynik=wynik+czynnik+" "
                     liczba/=czynnik
 
                 }//liczba%czynnik==0
